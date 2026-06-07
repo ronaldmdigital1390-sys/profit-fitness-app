@@ -533,7 +533,7 @@ export default function App() {
       <div className="absolute bottom-[10%] right-[5%] w-[450px] h-[450px] bg-[#7BCB14]/5 rounded-full blur-[160px] pointer-events-none" />
 
       {/* Frame wrapper simulating phone viewport or centering on screen */}
-      <div className="w-full max-w-md md:max-w-md min-h-screen md:min-h-[92vh] md:rounded-3xl bg-[#050505]/90 md:border md:border-white/10 md:shadow-[0_20px_60px_rgba(0,0,0,0.85)] flex flex-col justify-between overflow-hidden relative backdrop-blur-md">
+      <div id="main-app-viewport" className="w-full max-w-[430px] min-h-screen md:min-h-[92vh] md:rounded-3xl bg-[#050505]/90 md:border md:border-white/10 md:shadow-[0_20px_60px_rgba(0,0,0,0.85)] flex flex-col justify-between overflow-hidden relative backdrop-blur-md mx-auto box-border">
         
         {/* Core screens navigator based on Profile login status */}
         {!user ? (
