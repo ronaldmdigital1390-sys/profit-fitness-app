@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <title>PROFIT FITNESS</title>
+    
+    <!-- PWA declarations -->
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#A8E61D" />
+    
+    <!-- iOS / Safari App support -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="PROFIT" />
+    <link rel="apple-touch-icon" href="/icon-192.png" />
+    
+    <style>
+      /* Prevent iOS bounce scroll effects */
+      html, body {
+        background-color: #050505;
+        overscroll-behavior-y: contain;
+      }
+    </style>
+  </head>
+  <body class="bg-[#050505] text-white selection:bg-[#A8E61D]/30">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    
+    <!-- Service Worker registration -->
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js')
+            .then((reg) => console.log('Service Worker registrado con éxito:', reg.scope))
+            .catch((err) => console.error('Error registrando Service Worker:', err));
+        });
+      }
+    </script>
+  </body>
+</html>
+

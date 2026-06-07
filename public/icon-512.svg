@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <rect width="512" height="512" fill="#050505"/>
+  <defs>
+    <linearGradient id="limeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D7FF5A" />
+      <stop offset="100%" stop-color="#A8E61D" />
+    </linearGradient>
+    <filter id="glow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  <!-- Stylized premium P monogram logo badge -->
+  <g transform="translate(136, 110)" filter="url(#glow)">
+    <path d="M30 0 H160 C210 0 250 40 250 90 C250 140 210 180 160 180 H90 V290 H30 V0 Z M90 50 V130 H160 C172 130 190 118 190 90 C190 62 172 50 160 50 H90 Z" fill="url(#limeGrad)" />
+    <!-- Athletic details representing dumbbell speed elements -->
+    <rect x="-8" y="30" width="14" height="220" fill="#A8E61D" rx="6" opacity="0.8"/>
+    <rect x="-28" y="70" width="8" height="140" fill="#A8E61D" rx="4" opacity="0.5"/>
+  </g>
+</svg>

@@ -1,0 +1,8 @@
+{
+  "name": "PROFIT FITNESS",
+  "description": "Premium fitness tracking system with custom workouts, calendar, and daily challenges.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
