@@ -51,7 +51,8 @@ html, body, #root {
   overflow-wrap: break-word !important;
 }
 
-/* Evitar desborde en elementos de contenido */
-div, section, p, h1, h2, h3, h4, h5, h6, img, svg, button, inputFrom, form, select, input {
-  max-width: 100%;
+/* Permitir desplazamiento inercial natural nativo premium en iOS y Android */
+.overflow-y-auto {
+  -webkit-overflow-scrolling: touch !important;
+  scroll-behavior: smooth !important;
 }
